@@ -1,0 +1,14 @@
+/* Custom animation for the up-down movement */
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up 10px */
+  }
+}
+
+/* Apply the animation */
+.animate-up-down {
+  animation: moveUpDown 2s infinite ease-in-out;
+}
